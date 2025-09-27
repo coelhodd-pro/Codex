@@ -1,0 +1,17 @@
+CODEX FLOW (PROTOTYPE)
+
+                        Login
+                          |
+                        Menu
+                        /   \
+                    Journal  Codex
+                       |        |
+                     Lista    Lista
+                       |        |
+                     Criar    Criar
+                       |        |
+                     Salvar   Salvar
+                       |        |
+                     Voltar   Voltar
+                        \      /
+                          Sair
