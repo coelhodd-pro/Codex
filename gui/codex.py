@@ -1,6 +1,11 @@
+from utils.clear_terminal import clear
+
 def codex_screen():
+    clear()
+    print("Codex Menu")
+    print(f"{"=" * len("Codex Menu")}")
     while True:
-        print(f"Readable notes: {0}")
+        print(f"Notes in database: {0}")
 
         try:
             user_input = input("Do you wish to write a new note[y | n]? ")

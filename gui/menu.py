@@ -1,7 +1,11 @@
 from . import codex
 from . import journal
+from utils.clear_terminal import clear
 
 def menu_screen():
+    clear()
+    print("Main Menu")
+    print(f"{"=" * len("Main Menu")}")
     while True:
         try:
             user_input = input("Which functionality do you wish to access[Codex or Journal (type 'Quit' to quit)]? ")

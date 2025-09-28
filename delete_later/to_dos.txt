@@ -1,2 +1,7 @@
 28/09 - 11:50
-    To do: Fix imports so that the system can be connected
+    To do: Fix imports so that the system can be connected. -> FIXED
+
+--
+
+28/09 - 14:08
+    To do: Create database functionality.
