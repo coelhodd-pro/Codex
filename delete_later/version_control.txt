@@ -1,0 +1,8 @@
+Codex v0.1 (Prototype):
+    - Initial Screen ("Enter button")
+    - Menu ("Journal" and "Codex" options)
+    - Personal Environment on "Journal" and "Codex" options
+    (list of notes and possibility to create a new note)
+    - Saving of notes
+    - Very Basic GUI
+
