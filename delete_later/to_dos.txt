@@ -4,4 +4,4 @@
 --
 
 28/09 - 14:08
-    To do: Create database functionality.
+    To do: Create database functionality. -> FIXED
