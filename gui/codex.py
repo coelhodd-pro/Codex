@@ -1,0 +1,14 @@
+def codex_screen():
+    while True:
+        print(f"Readable notes: {0}")
+
+        try:
+            input("Do you wish to write a new note[y | n]? ")
+        except ValueError:
+            print("Provide a valid response: y(yes) | n(no)")
+            continue
+
+        if user_input.lower() == "y":
+            print("You just wrote a new note!")
+        else:
+            break
