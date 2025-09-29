@@ -6,13 +6,14 @@ def journal_screen():
     print("Journal Menu")
     print(f"{"=" * len("Journal Menu")}")
 
-    while True:
+    while True: 
         print("""
             Controls:
             [1] - Show notes on database
-            [2] - Write new note
-            [3] - Edit an exising note
-            [4] - Go back to Main Menu
+            [2] - Show specific note
+            [3] - Write new note
+            [4] - Edit an exising note
+            [5] - Go back to Main Menu
         """)
         
         try:
@@ -22,12 +23,14 @@ def journal_screen():
             continue
         
         if user_input == "1":
-            read()
+            show()
         elif user_input == "2":
-            write()
+            read()
         elif user_input == "3":
-            edit()
+            write()
         elif user_input == "4":
+            edit()
+        elif user_input == "5":
             break
         else:
             print("Invalid option. Try again.")
