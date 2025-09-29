@@ -16,12 +16,8 @@ def journal_screen():
             [5] - Go back to Main Menu
         """)
         
-        try:
-            user_input = input(">>> ")
-        except ValueError:
-            print("Invalid option. Try again.")
-            continue
-        
+        user_input = input(">>> ")
+                
         if user_input == "1":
             show()
         elif user_input == "2":

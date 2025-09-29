@@ -6,13 +6,10 @@ def menu_screen():
     clear()
     print("Main Menu")
     print(f"{"=" * len("Main Menu")}")
-    while True:
-        try:
-            user_input = input("Which functionality do you wish to access[Codex or Journal (type 'Quit' to quit)]? ")
-        except ValueError:
-            print("Provide a valid option: Codex | Journal | ")
-            continue
 
+    while True:
+        user_input = input("Which functionality do you wish to access[Codex or Journal (type 'Quit' to quit)]? ")
+        
         if user_input.lower() == "quit":
             print("Logging you out...")
             break
@@ -22,4 +19,4 @@ def menu_screen():
         elif user_input.lower() == "journal":
             journal.journal_screen()
         else:
-            print("Invalid Option. Try again.")
+            print("Invalid Option. Try again. [Codex | Journal | Quit]")
