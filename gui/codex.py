@@ -27,7 +27,7 @@ def codex_screen():
         elif user_input == "3":
             write(context)
         elif user_input == "4":
-            edit()
+            edit(context)
         elif user_input == "5":
             break
         else:

@@ -40,7 +40,7 @@ def show(context):
             print(f"{key}: {value}")
         print("\n")
 
-def edit():
+def edit(context):
     field = input("Which field would you like to edit: ")
     field = field.lower()
 
@@ -49,7 +49,7 @@ def edit():
         return
 
     title = input("Provide the title of the note: ")
-    with open("/home/skygge/Codebases/Codex/data/codex.json", "r") as f:
+    with open(f"/home/skygge/Codebases/Codex/data/{context}.json", "r") as f:
         db = json.load(f)
 
 
@@ -61,5 +61,5 @@ def edit():
         print("Note not found.")
         return
 
-    with open("/home/skygge/Codebases/Codex/data/codex.json", "w") as f:
+    with open(f"/home/skygge/Codebases/Codex/data/{context}.json", "w") as f:
         json.dump(db, f, indent=4)
