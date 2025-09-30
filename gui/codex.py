@@ -1,5 +1,7 @@
 from utils.clear_terminal import clear
-from storage.codex_db import *
+from storage.notes_db import *
+
+context = "codex"
 
 def codex_screen():
     clear()
@@ -19,11 +21,11 @@ def codex_screen():
         user_input = input(">>> ")
                 
         if user_input == "1":
-            show()
+            show(context)
         elif user_input == "2":
-            read()
+            read(context)
         elif user_input == "3":
-            write()
+            write(context)
         elif user_input == "4":
             edit()
         elif user_input == "5":

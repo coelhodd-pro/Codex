@@ -1,8 +1,8 @@
 from datetime import date
 import json
 
-def write():
-    with open("/home/skygge/Codebases/Codex/data/codex.json", "r") as f:
+def write(context):
+    with open(f"/home/skygge/Codebases/Codex/data/{context}.json", "r") as f:
         db = json.load(f)
 
     data = {
@@ -10,18 +10,18 @@ def write():
         "content": input("Content: "),
         "name": input("Name: "),
         "date": str(date.today()),
-        "context": "codex"
+        "context": context
     }
 
     db.append(data)
 
-    with open("/home/skygge/Codebases/Codex/data/codex.json", "w") as f:
+    with open(f"/home/skygge/Codebases/Codex/data/{context}.json", "w") as f:
         json.dump(db, f, indent=4)
 
-def read():
+def read(context):
     title = input("Provide the title of the note: ")
     
-    with open("/home/skygge/Codebases/Codex/data/codex.json", "r") as f:
+    with open(f"/home/skygge/Codebases/Codex/data/{context}.json", "r") as f:
         db = json.load(f)
 
     for data in db:
@@ -31,8 +31,8 @@ def read():
     else:
         print("Note not found.")
 
-def show():
-    with open("/home/skygge/Codebases/Codex/data/codex.json", "r") as f:
+def show(context):
+    with open(f"/home/skygge/Codebases/Codex/data/{context}.json", "r") as f:
         db = json.load(f)
 
     for data in db:

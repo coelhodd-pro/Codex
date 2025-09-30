@@ -12,5 +12,12 @@
         "name": "Davi",
         "date": "2025-09-28",
         "context": "journal"
+    },
+    {
+        "title": "Testing the context",
+        "content": "This is a test of the context",
+        "name": "Davi",
+        "date": "2025-09-29",
+        "context": "journal"
     }
 ]
