@@ -35,11 +35,17 @@ def show(context):
     with open(f"/home/skygge/Codebases/Codex/data/{context}.json", "r") as f:
         db = json.load(f)
 
-    for dictionary in db:
-        for key, value in dictionary.items():
-            print(f"{key}: {value}")
-        print("\n")
+    if not db:
+        print("No notes found.")
+        return
 
+    for note in db:
+        print(f"Title: {note['title']}")
+        print(f"Date: {note['date']}")
+        print(f"Author: {note['name']}")
+        print(f"Content: {note['content']}")
+        print(f"-" * 40)
+    
 def edit(context):
     field = input("Which field would you like to edit: ")
     field = field.lower()
