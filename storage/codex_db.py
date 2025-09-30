@@ -61,25 +61,3 @@ def edit():
 
     with open("/home/skygge/Codebases/Codex/data/codex.json", "w") as f:
         json.dump(db, f, indent=4)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
