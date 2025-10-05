@@ -1,7 +1,6 @@
 from datetime import date
 
 class Note:
-    # Everytime a Note object is created the method below is called
     def __init__(self, title, content, name, context, date_created=None):
         self.title = title
         self.content = content
@@ -13,8 +12,8 @@ class Note:
         return {
             "title": self.title,
             "content": self.content,
-            "name": self.name
-            "date": self.date_created
+            "name": self.name,
+            "date": self.date_created,
             "context": self.context
         }
 
@@ -27,3 +26,6 @@ class Note:
             context=data["context"],
             date_created=data["date"]
         )
+
+    def summary(self):
+        return self.content[:50] + "..." if len(self.content) > 50 else self.content
